@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b9860994.css",
+    "main.js": "/static/js/main.2785751a.js",
+    "static/media/smadreland.mp4": "/static/media/smadreland.b03e248810c9fc13e206.mp4",
+    "static/media/michel-game.mp4": "/static/media/michel-game.e606b1c18c4ab25e0a4e.mp4",
+    "static/media/controller.mp4": "/static/media/controller.01e16d5e5dff2e7957ca.mp4",
+    "static/media/wizardsmackdown.mp4": "/static/media/wizardsmackdown.93929d986ce4c46e6aa3.mp4",
+    "static/media/insidebob.gif": "/static/media/insidebob.6db30d1e8f3a196f632e.gif",
+    "static/media/insidebob-game.png": "/static/media/insidebob-game.52af0fe351b60142cf32.png",
+    "static/media/photo.jpg": "/static/media/photo.324d2293a09c8696cbd2.jpg",
+    "static/media/idleconquest-game.jpg": "/static/media/idleconquest-game.d23274bb01d78843c0a0.jpg",
+    "static/media/smadreland-game.jpg": "/static/media/smadreland-game.34ecc42f876dc6f741bf.jpg",
+    "static/media/chessapocalypse.jpg": "/static/media/chessapocalypse.c8de588274b0a136a90f.jpg",
+    "static/media/michel-game.jpg": "/static/media/michel-game.ce7fe889be78edcfb4ef.jpg",
+    "static/media/controllerbleh.jpg": "/static/media/controllerbleh.a4adb113224c2faf41d3.jpg",
+    "static/media/wizardsmackdown-game.jpg": "/static/media/wizardsmackdown-game.5b26d933c1266d24e2ab.jpg",
+    "static/media/smadreland.jpg": "/static/media/smadreland.9753ae0f8ae6ef8d1143.jpg",
+    "static/media/wizardsmackdown.jpg": "/static/media/wizardsmackdown.0010771ba28fddabb25f.jpg",
+    "static/media/controller.jpg": "/static/media/controller.1c11c97327db8ce952df.jpg",
+    "static/media/chessapocalypse-logo.png": "/static/media/chessapocalypse-logo.7eb2665b8a2a5c17898f.png",
+    "static/media/idleconquest.jpg": "/static/media/idleconquest.5223c48b60e5cb645c36.jpg",
+    "static/media/linkedin.png": "/static/media/linkedin.aec3ce46d361394d80c8.png",
+    "static/media/michel.jpg": "/static/media/michel.0c3253e1316850c390fc.jpg",
+    "static/media/pacha.md": "/static/media/pacha.8eedbf4bb904089a80d6.md",
+    "static/media/wizardsmackdown.md": "/static/media/wizardsmackdown.04e4a71eaea70d3fa725.md",
+    "static/media/chessapocalypse.md": "/static/media/chessapocalypse.f794a8d310b0f3569ab2.md",
+    "static/media/smadreland.md": "/static/media/smadreland.45b421f3e2b1c781dd22.md",
+    "static/media/controller.md": "/static/media/controller.edcbfcee64080dc9930d.md",
+    "static/media/idleconquest.md": "/static/media/idleconquest.d832fa82f94016d1c7f9.md",
+    "static/media/michel.md": "/static/media/michel.cd8f9059bee5c83e54db.md",
+    "static/media/insidebob.md": "/static/media/insidebob.819842eb05fc3adf2d92.md",
+    "static/media/twitter.svg": "/static/media/twitter.cb7fddb4b3f73b2725272dd9b5fcc031.svg",
+    "static/media/intro.md": "/static/media/intro.e5e0efb612146b9ddaad.md",
+    "index.html": "/index.html",
+    "main.b9860994.css.map": "/static/css/main.b9860994.css.map",
+    "main.2785751a.js.map": "/static/js/main.2785751a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9860994.css",
+    "static/js/main.2785751a.js"
+  ]
+}

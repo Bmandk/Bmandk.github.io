@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Raleway:400,700|Source+Sans+Pro');
+
+$navbarcolor: white;
+$navbarbgcolor: #8b0000;
+$navbarlinkbghover: #640000;
+$projecthovertime: 0.25s;
+$pagewidth: 992px;
+
+/* @include transition(all,2s,ease-out); */
+@mixin transition($x...) {
+    -webkit-transition: $x;
+    -moz-transition: $x;
+    -ms-transition: $x;
+    -o-transition: $x;
+    transition: $x;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+    line-height: 1.42857143;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    //font-family: 'Bungee', cursive;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: underline;
+    color: #1982d1;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: $navbarbgcolor;
+    margin-bottom: 20px;
+
+    .brand {
+        font-family: "Raleway", sans-serif;
+        font-size: 24px;
+        padding: calc((50px - 29px) / 2);
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+
+        &:hover {
+            background-color: $navbarlinkbghover;
+        }
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.content {
+    font-size: 1.3em;
+
+    ul {
+        list-style-type: disc;
+    }
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .project {
+        flex-basis: 100%;
+        position: relative;
+        padding: 6px 30px;
+        z-index: 0;
+        @include transition(z-index $projecthovertime, transform $projecthovertime);
+        transform: scale(1);
+
+        &:hover {
+            z-index: 1;
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 1;
+            @include transition(opacity $projecthovertime);
+
+            &:hover {
+                opacity: 0.3;
+            }
+        }
+
+        a {
+            width: 100%;
+            //position: relative;
+            h2 {
+                width: 100%;
+                opacity: 0;
+                z-index: 2;
+                color: black;
+                font-size: 18px;
+                @include transition(opacity $projecthovertime);
+                pointer-events: none;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                margin: 0;
+            }
+
+            &:hover {
+                h2 {
+                    opacity: 1;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
+/*.vid {
+    position: relative;
+    margin: 0 30px;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.vid iframe, .vid video {
+    position: absolute;
+    border: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}*/
+
+.header {
+    text-align: center;
+}
+
+.about {
+    #profilepic img {
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
+.logo {
+    display: inline-block;
+    margin: 12.5px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.game {
+    height: 56.25%;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 20px;
+
+    p {
+        text-align: inherit;
+    }
+}
+
+.projecttext {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    /*.gameimg {
+        img {
+            max-width: 100%;
+        }
+    }*/
+
+    img, video {
+        max-width: 100%;
+    }
+
+    .vid {
+        video, iframe {
+            object-fit: contain;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    ul {
+        margin-bottom: 1em;
+    }
+}
+
+.blog {
+    h1 {
+        text-align: left;
+    }
+
+    .blogThumbnail {
+        padding: 10px 0;
+        a:hover {
+            color: #1982d1;
+        }
+    }
+}
+
+.blogEntry {
+    padding: 10px 0;
+
+    h1 {
+        text-align: left;
+    }
+
+    img {
+        display: block;
+        margin: 30px auto;
+    }
+}
+
+.blog, .blogEntry {
+    max-width: 500px;
+}
+
+code {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid $navbarbgcolor;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+.date {
+    font-size: 0.8em;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+@media only screen and (min-width: 768px) {
+    .projecttext {
+        & > div:not(.game):not(.gametext) {
+            flex: 1;
+            //max-width: 47%;
+            margin: 0 20px;
+        }
+
+        .gametext {
+            margin: 50px;
+        }
+    }
+
+    .navbar {
+        margin-bottom: 50px;
+    }
+
+    .projects {
+        .project {
+            padding: 8px;
+            flex-basis: calc(50% - 16px);
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .about {
+        display: flex;
+
+        #profilepic {
+            flex-basis: calc(100%/3);
+            margin-left: calc(100%/12);
+
+            img {
+                margin-top: 60px;
+            }
+        }
+
+        #profile {
+            flex-basis: 50%;
+            margin-left: calc(100%/12);
+        }
+    }
+
+    #cv {
+        margin-top: 30px;
+    }
+
+    .container:not(.blog):not(.blogEntry) {
+        max-width: calc(768px - 30px);
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container:not(.blog):not(.blogEntry) {
+        max-width: calc(992px - 30px);
+    }
+
+    .projects {
+        .project {
+            flex-basis: calc(33.3333% - 16px);
+        }
+    }
+}
