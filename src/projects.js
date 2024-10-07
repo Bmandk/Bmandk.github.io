@@ -1,18 +1,30 @@
 var x = {
     "projects": [
         {
-            "type": "onepiece",
-            "directory": "chessapocalypse",
+            "type": "singlecolumn",
+            "directory": "theduckpond",
             "thumbnail": {
-                "image": require("./projects/chessapocalypse/chessapocalypse-logo.png"),
-                "text": "Chess Apocalypse (2021)"
+                "image": "/projects/theduckpond/theduckpond-cover.png",
+                "text": "The Duck Pond (2024)"
             },
             "page": {
-                "name": "Chess Apocalypse (2021)",
-                "markdown": require("./projects/chessapocalypse/chessapocalypse.md"),
-                "media": require("./projects/chessapocalypse/chessapocalypse.jpg"),
+                "name": "The Duck Pond (2024)",
+                "markdown": require("./projects/theduckpond/theduckpond.md")
             }
         },
+        // {
+        //     "type": "onepiece",
+        //     "directory": "chessapocalypse",
+        //     "thumbnail": {
+        //         "image": require("./projects/chessapocalypse/chessapocalypse-logo.png"),
+        //         "text": "Chess Apocalypse (2021)"
+        //     },
+        //     "page": {
+        //         "name": "Chess Apocalypse (2021)",
+        //         "markdown": require("./projects/chessapocalypse/chessapocalypse.md"),
+        //         "media": require("./projects/chessapocalypse/chessapocalypse.jpg"),
+        //     }
+        // },
         {
             "type": "singlecolumn",
             "directory": "pacha",
@@ -67,19 +79,19 @@ var x = {
                 "media2": require("./projects/smadreland/smadreland.mp4")
             }
         },
-        {
-            "type": "onepiece",
-            "directory": "idleconquest",
-            "thumbnail": {
-                "image": require("./projects/idleconquest/idleconquest.jpg"),
-                "text": "IdleConquest (2018)"
-            },
-            "page": {
-                "name": "IdleConquest (2018)",
-                "markdown": require("./projects/idleconquest/idleconquest.md"),
-                "media": require("./projects/idleconquest/idleconquest-game.jpg")
-            }
-        },
+        // {
+        //     "type": "onepiece",
+        //     "directory": "idleconquest",
+        //     "thumbnail": {
+        //         "image": require("./projects/idleconquest/idleconquest.jpg"),
+        //         "text": "IdleConquest (2018)"
+        //     },
+        //     "page": {
+        //         "name": "IdleConquest (2018)",
+        //         "markdown": require("./projects/idleconquest/idleconquest.md"),
+        //         "media": require("./projects/idleconquest/idleconquest-game.jpg")
+        //     }
+        // },
         {
             "type": "twopiece",
             "directory": "michelsinnerjourney",
@@ -108,20 +120,20 @@ var x = {
                 "gamejs": process.env.PUBLIC_URL + "/projects/vikingrevenge/Build/UnityLoader.js"
             }
         },*/
-        {
-            "type": "twopiece",
-            "directory": "controller",
-            "thumbnail": {
-                "image": require("./projects/controller/controller.jpg"),
-                "text": "4D Controller (2015)"
-            },
-            "page": {
-                "name": "4D Controller (2015)",
-                "markdown": require("./projects/controller/controller.md"),
-                "media1": require("./projects/controller/controllerbleh.jpg"),
-                "media2": require("./projects/controller/controller.mp4")
-            }
-        },
+        // {
+        //     "type": "twopiece",
+        //     "directory": "controller",
+        //     "thumbnail": {
+        //         "image": require("./projects/controller/controller.jpg"),
+        //         "text": "4D Controller (2015)"
+        //     },
+        //     "page": {
+        //         "name": "4D Controller (2015)",
+        //         "markdown": require("./projects/controller/controller.md"),
+        //         "media1": require("./projects/controller/controllerbleh.jpg"),
+        //         "media2": require("./projects/controller/controller.mp4")
+        //     }
+        // },
         {
             "type": "twopiece",
             "directory": "wizardsmackdown",
