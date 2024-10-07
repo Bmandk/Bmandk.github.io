@@ -2,7 +2,7 @@ import { Content, Container } from './Components';
 import About from './about/About';
 import React from 'react';
 import './App.scss';
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes, HashRouter } from "react-router-dom";
 import { ProjectOnePiece, ProjectSingleColumn, ProjectTwoPiece/*, ProjectGame*/ } from './projects/Project';
 import Projects from './projects';
 import Footer from './footer/footer';
@@ -124,7 +124,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <Router>
+            <HashRouter>
                 <MyNavbar />
                 <Routes>
                     <Route path="/" exact element={<Frontpage />} />
@@ -134,7 +134,7 @@ class App extends React.Component {
                     {this.state.blogRoutes}
                 </Routes>
                 <Footer />
-            </Router>
+            </HashRouter>
         );
     }
 }
